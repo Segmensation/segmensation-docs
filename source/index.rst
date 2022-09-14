@@ -12,6 +12,7 @@ Welcome to Segmensation's documentation!
 
    usage/installation
    usage/quickstart
+   development/documentation
 
 
 
