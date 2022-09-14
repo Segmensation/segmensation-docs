@@ -14,7 +14,7 @@ from GitHub.
 The documentation index is contained in ``source/index.rst`` and looks as 
 follows:
 
-.. image:: https://github.com/Segmensation/segmensation-docs/blob/main/source/img/sphinx_index.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/sphinx_index.jpg
    :alt: image of shinx project index
    :align: center
 
