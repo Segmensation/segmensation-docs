@@ -12,6 +12,12 @@ Welcome to Segmensation's documentation!
 
    usage/installation
    usage/quickstart
+   usage/open
+   usage/analyze
+   usage/prepare
+   usage/draw
+   usage/train
+   usage/predict
    development/documentation
 
 
