@@ -1,5 +1,5 @@
-Including ImageJ-Modules
-========================
+Including ImageJ2-Modules
+=========================
 
 ImageJ2 is an imgage manipulation program with focus on multidimensional image data for scientific purposes.
 It offers a range of functions that are useful in the application area of Segmensation, e.g. the calculation of directionality in Images.
@@ -8,7 +8,7 @@ To create a simple workflow, ImageJ2 (originally written in Java) has been inclu
 This package and its dependencies have already been added to the docker container of the backend and are ready to use.
 
 Initializing ImageJ2
-====================
+--------------------
 To use ImageJ2, the following steps are necessary:
 
 .. code-block:: python3
