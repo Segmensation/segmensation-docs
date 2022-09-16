@@ -8,17 +8,27 @@ Welcome to Segmensation's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Usage
 
    usage/installation
    usage/quickstart
+   usage/open
+   usage/analyze
+   usage/prepare
+   usage/draw
+   usage/train
+   usage/predict
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Development
+
    development/documentation
 
 
+.. Indices and tables
+   ==================
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
