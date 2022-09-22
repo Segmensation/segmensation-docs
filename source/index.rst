@@ -24,6 +24,7 @@ Welcome to Segmensation's documentation!
    :caption: Development
 
    development/documentation
+   development/pyimagej
 
 
 .. Indices and tables
