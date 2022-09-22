@@ -1,5 +1,5 @@
-Opening an Image
-================
+Uploading an Image
+==================
 
 Segmensation can handle standard Images (.jpg, .png) as well as large, multidimensional Images (.czi, .tif).
 
