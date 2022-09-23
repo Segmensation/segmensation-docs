@@ -14,4 +14,4 @@ For the correct upload of multidimensional images additional information is nece
 **File Type**
 	Select if you want to upload a layered image (CZI Stack) or a mosaic (CZI Stitching).
 
-When the upload is completeted, the corresponding image is shown on the left and can be selected for further processing.
+When the upload is completed, the corresponding image is shown on the left and can be selected for further processing.
