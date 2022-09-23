@@ -23,8 +23,9 @@ Welcome to Segmensation's documentation!
    :maxdepth: 2
    :caption: Development
 
-   development/documentation
+   development/setup
    development/pyimagej
+   development/documentation
 
 
 .. Indices and tables
