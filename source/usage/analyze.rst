@@ -1,13 +1,17 @@
 Analyzing an Image
 ==================
-This step contains a number of functions that were specifically 
-implemented for the analysis of astrocytes in brain images. 
+This tab contains a number of functions that were specifically 
+implemented for the analysis of astrocytes and nerve fibers in brain 
+images. 
 
 Detecting astrocytes
 --------------------
-This Function is similar to Segmensation's general workflow. 
+.. note:: 
+  This Function is specialized for fluorescent brain images taken on 
+  the GFAP channel, as this channel depicts astrocytes among other 
+  things.
 
-First, new training data can be generated through segmentation 
+New training data can be generated through segmentation 
 of an image followed by manual sorting of the resulting regions 
 into:
 
@@ -17,31 +21,44 @@ into:
 * 'clumps_astrocyte'
 * 'clumps_mixed'
 
-If labelled trainig data exists, a Random Forest Classifier can 
-be trained on this data.
+.. warning::
+  The script for generating training data runs on the server and 
+  is not fully integrated with the frontend yet. The generated 
+  images are saved to the folder 
+  `model\\astrocytes\\train_data\\new_training_regions` inside the 
+  docker container of the backend and need to be sorted there.
 
-The last function in this segment is the prediction of the 
-regions mentioned above in an unlabelled image.
+If labelled trainig data exists, a Random Forest Classifier can 
+be trained on this data. The classifier can then be used to predict 
+occurrences of astrocytes in unlabelled images.
 
 Calculating orientation
 -----------------------
 This function divides an image into smaller patches and 
-calculates the preferential direction for each patch.
+calculates the preferential direction for each patch through the 
+directionality plugin that is included in Fiji.
+
+.. note:: 
+  More information on how the directionality plugin works can be 
+  found `here <https://imagej.net/plugins/directionality>`_.
 
 The results can be downloaded as CSV files.
 
-Ratio of fibres
+Ratio of fibers
 ---------------
-This function calculates the ratio of fibres or astrocytes in an 
-image. For this, the amount of pixels attributed to objects in each 
-channel is calculated. 
+This function calculates the ratio of fibers or astrocytes in an 
+image by getting the amount of pixels assigned to objects in each 
+channel (AF/MBP (myelin fibers), GFAP (astrocytes)). Pixels that 
+are assigned to multiple objects are not taken into account, as 
+overlapping structures are not possible.
 
-Threshold and foreground pixels can be calculated and downloaded as csv.
+Threshold and foreground pixels can be calculated and downloaded as 
+csv.
 
-Segmentation of fibres
+Segmentation of fibers
 ----------------------
 This segment offers three different methods for the segmentation of 
-fibres in an image:
+fibers in an image:
 
 **Method 1**
 
@@ -55,10 +72,10 @@ fibres in an image:
 **Method 3**
 
 * Removal of large Objects through Otsu's method
-* Segmentation of remaining fibres through a threshold method (Otsu's 
+* Segmentation of remaining fibers through a threshold method (Otsu's 
   method/mean method)
 
 Other
 -----
-THis segment contains the option to create and save a greyscale 
+This segment contains the option to create and save a greyscale 
 histogram for an image.
