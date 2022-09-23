@@ -7,4 +7,5 @@ from the list on the right, adjust the line strength an start drawing.
 Controls
 --------
 Moving the Image: Click & drag
+
 Zoom: Shift + Mousewheel

@@ -1,7 +1,7 @@
 Analyzing an Image
 ==================
-This step contains a number of functions that were specifically 
-implemented for the analysis of astrocytes in brain images. 
+This tab contains a number of functions that were specifically 
+implemented for the analysis of astrocytes and nerve fibres in brain images. 
 
 Detecting astrocytes
 --------------------
@@ -20,8 +20,8 @@ into:
 If labelled trainig data exists, a Random Forest Classifier can 
 be trained on this data.
 
-The last function in this segment is the prediction of the 
-regions mentioned above in an unlabelled image.
+The last function in this segment is the prediction of above 
+mentioned regions in an unlabelled image.
 
 Calculating orientation
 -----------------------
@@ -33,8 +33,8 @@ The results can be downloaded as CSV files.
 Ratio of fibres
 ---------------
 This function calculates the ratio of fibres or astrocytes in an 
-image. For this, the amount of pixels attributed to objects in each 
-channel is calculated. 
+image by getting the amount of pixels assigned to objects in each 
+channel.
 
 Threshold and foreground pixels can be calculated and downloaded as csv.
 
@@ -60,5 +60,5 @@ fibres in an image:
 
 Other
 -----
-THis segment contains the option to create and save a greyscale 
+This segment contains the option to create and save a greyscale 
 histogram for an image.
