@@ -152,9 +152,25 @@ Localhost Linux
 Server Linux
 ------------
 
-todo
+- make sure python3 and pip is installed properly
+- ``python3 -m pip -V``
+- install ansible
+- ``python3 -m pip install --user ansible``
+- make sure to have docker(v20.x.x) and docker-compose(v2.x.x) installed
+- ``docker --version`` and ``docker-compose --version``
+- clone this repository `SegInfrastructure <https://github.com/Segmensation/segmensation-infrastructure>`_
+- edit /ansible/inventory 2nd line, where ``ansible_host=<server_ip>`` to your servers ip
+- go into /ansible/ and run
+- ``ansible-playbook -i inventory -l "prod_server" playbook.yml -u <user> --ask-pass --ask-become-pass --ask-vault-pass``
+   - ``user`` user to who you connected over ssh
+   - ``sshpw`` the ssh password to your user
+   - ``becomepw`` is your sudo password from your user
+   - ``vaultpw`` is in the KeePass database
 
 Frontend
 ========
 
-todo
+- clone this repository `SegApp <https://github.com/Segmensation/segmensation-app>`_
+- set ``ELECTRON_WEBPACK_APP_API_URL="http://localhost:5000"`` in segmansation-app/.env
+- or ``ELECTRON_WEBPACK_APP_API_URL="http://<server_ip>:5000"`` if Backend is running on a server
+- follow README there to set it up
