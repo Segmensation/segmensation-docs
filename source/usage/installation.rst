@@ -1,4 +1,4 @@
-Backend
+Setup Backend
 =======
 
 Localhost Windows
@@ -167,7 +167,7 @@ Server Linux
    - ``becomepw`` is your sudo password from your user
    - ``vaultpw`` is in the KeePass database
 
-Frontend
+Setup Frontend
 ========
 
 - clone this repository `SegApp <https://github.com/Segmensation/segmensation-app>`_
