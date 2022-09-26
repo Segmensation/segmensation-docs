@@ -1,8 +1,11 @@
+Installation
+============
+
 Setup Backend
-=======
+-------------
 
 Localhost Windows
------------------
+^^^^^^^^^^^^^^^^^
 
 **1. Setup WSL2**
 
@@ -13,7 +16,7 @@ Localhost Windows
 - Enable Virtual Maschine: open Powershell as Admin and run
 - ``dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart``
 - reboot your PC
-- download and install `WSL2 <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi>`_
+- download and install `WSL2 <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi>`_ 
 - set WSL2 as defaul: open Powershell as Admin and run
 - ``wsl --set-default-version 2``
 - to verify your linux Installation is running on WSL2, run:
@@ -84,7 +87,7 @@ Localhost Windows
 
 
 Localhost Linux
----------------
+^^^^^^^^^^^^^^^
 
 **1. Install Docker**
 
@@ -150,7 +153,7 @@ Localhost Linux
 
 
 Server Linux
-------------
+^^^^^^^^^^^^
 
 - make sure python3 and pip is installed properly
 - ``python3 -m pip -V``
@@ -168,7 +171,7 @@ Server Linux
    - ``vaultpw`` is in the KeePass database
 
 Setup Frontend
-========
+--------------
 
 - clone this repository `SegApp <https://github.com/Segmensation/segmensation-app>`_
 - set ``ELECTRON_WEBPACK_APP_API_URL="http://localhost:5000"`` in segmansation-app/.env
