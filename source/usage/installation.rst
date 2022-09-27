@@ -85,6 +85,11 @@ Localhost Windows
 - ``docker-compose up -d``
 - now you should see the containers running in Docker Desktop
 
+.. note:: 
+   For building and testing your own code, replace this step with 
+   the steps in 
+   :doc:`Setting up Segmensation for development </development/setup>`.
+
 
 Localhost Linux
 ^^^^^^^^^^^^^^^

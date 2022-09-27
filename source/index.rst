@@ -11,7 +11,6 @@ Welcome to Segmensation's documentation!
    :caption: Usage
 
    usage/installation
-   usage/quickstart
    usage/open
    usage/analyze
    usage/prepare
