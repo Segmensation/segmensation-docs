@@ -98,7 +98,7 @@ Localhost Windows
 - now you should have a segmensation and traefik folder with docker-compose files in it
 
 
-**5. Run**
+**6. Run**
 
 - Open Powershell and navigate to the segmensation folder
 - ``docker-compose up -d``
