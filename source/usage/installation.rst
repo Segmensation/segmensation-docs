@@ -19,9 +19,7 @@ Localhost Windows
 - download and install `WSL2 <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi>`_ 
 - set WSL2 as defaul: open Powershell as Admin and run
 - ``wsl --set-default-version 2``
-- to verify your linux Installation is running on WSL2, run:
-- ``wsl --list --verbose``
-- it should be 2 in the VERSION column 
+
 
 **2. Install Linux Distribution**
 
@@ -29,24 +27,47 @@ Localhost Windows
 - Follow Instructions for your Linux distribution to set it up
 - Follow Instructions `Ansible <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu>`_ to install Ansible
 
+- it should look like this on your linux vm
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/wsl.png
+   :alt: linux vm with python, pip and ansible
+   :align: center
+
+- to verify your linux Installation is running on WSL2, run:
+- ``wsl --list --verbose``
+- it should be 2 in the VERSION column 
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/wsl2.png
+   :alt: linux vm running on WSL2
+   :align: center  
+
 **3. Install Docker for Windows**
 
 - download and install `Docker <https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe>`_
 - make sure "Install required Windows Components for WSL2" is checked
 - in Docker Desktop go to Settings > General and make sure "Use the WSL 2 based engine" is checked
-- go to Settings > Resource > WSL Integration and enable integration with your linux distribution
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/docker1.png
+   :alt: general docker settings
+   :align: center
+
+- go to Settings > Resource > WSL Integration and enable integration for your linux distribution
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/docker2.png
+   :alt: docker settings for linux vm
+   :align: center
+
 - if it doesnt run correctly, you might need to enable virtualisation in BIOS-Settings. Check your Motherboard Manufacturers Documentation to enable it. 
 
-**3. Install Node.js**
+
+**4. Install Node.js**
 
 - install `Node.js <https://nodejs.org/en/>`_ atleast version 14. but its good to install the latest stable LTS version
 - open Powershell as Admin and run:
 - ``corepack enable``
 - to verify installation run: 
 - ``node --version`` and ``yarn --version``
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/nodejs.png
+   :alt: verify node and yarn are installed properly
+   :align: center
 
-
-**4. Deploy**
+**5. Deploy**
 
 - Open your Linux Distribution
 - clone this repository
@@ -84,6 +105,10 @@ Localhost Windows
 - Open Powershell and navigate to the traefik folder
 - ``docker-compose up -d``
 - now you should see the containers running in Docker Desktop
+
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/dockercontainer.png
+   :alt: container running in Docker Desktop
+   :align: center
 
 .. note:: 
    For building and testing your own code, replace this step with 
