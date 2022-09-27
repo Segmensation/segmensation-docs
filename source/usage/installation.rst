@@ -146,13 +146,13 @@ Localhost Linux
     - ``sshpw`` is an ssh key of your maschine (not necessary)
     - ``becomepw`` is your sudo password from your linux
     - ``vaultpw`` is in the KeePass database
-- now you should have segmensation and traefik folders with docker-compose files in it
+- now you should have traefik and segmensation folders with docker-compose files in it
 
 **5. Run**
 
-- Open Powershell and navigate to the segmensation folder
-- ``docker-compose up -d``
 - Open Powershell and navigate to the traefik folder
+- ``docker-compose up -d``
+- Open Powershell and navigate to the segmensation folder
 - ``docker-compose up -d``
 - now you should see the containers running in Docker Desktop
 
