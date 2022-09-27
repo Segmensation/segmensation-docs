@@ -25,8 +25,14 @@ Localhost Windows
 
 - Open `Microsoft Store <https://aka.ms/wslstore>`_ and install a Linux distribution (f.e. Ubuntu 20.04.4 LTS)
 - Follow Instructions for your Linux distribution to set it up
-- Follow Instructions `Ansible <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu>`_ to install Ansible
-
+- it is possible to install ansible with apt (``sudo apt install ansible``), but its recommended to install it with python like in the official documentation
+- make sure to have python with pip installed
+- ``python3 -m pip -V``
+- then install ansible with python
+- ``python3 -m pip install --user ansible``
+- ``ansible --version``
+- note that ansible is not added to PATH
+- add it to path or use it directly with ``/home/<user>/.local/bin/ansible``
 - it should look like this on your linux vm
 .. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/wsl.png
    :alt: linux vm with python, pip and ansible
@@ -98,7 +104,7 @@ Localhost Windows
 - now you should have a segmensation and traefik folder with docker-compose files in it
 
 
-**5. Run**
+**6. Run**
 
 - Open Powershell and navigate to the segmensation folder
 - ``docker-compose up -d``
@@ -123,19 +129,29 @@ Localhost Linux
 
 - ``sudo pacman -S docker docker-compose`` (pacman is the  package manager in Archlinux, use your package manager)
 - Reboot
-- ``sudo systemctl start docker.service``
-- ``sudo systemctl enable docker.service``
-- ``sudo usermod -aG docker $USER``
+- to start docker service ``sudo systemctl start docker.service``
+- to start docker service on every boot ``sudo systemctl enable docker.service``
+- add user to docker group ``sudo usermod -aG docker $USER``
 - Reboot or Re-Login 
 - ``docker run hello-world``
+
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/linuxdocker.png
+   :alt: container running in Docker Desktop
+   :align: center
 
 **2. Install Ansible**
 
 - make sure to have python with pip installed
+- ``python3 -m pip -V``
+- then install ansible with python
 - ``python3 -m pip install --user ansible``
 - ``ansible --version``
 - note that ansible is not added to PATH
 - add it to path or use it directly with ``/home/<user>/.local/bin/ansible``
+
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/linuxansible.png
+   :alt: container running in Docker Desktop
+   :align: center
 
 **3. Install Node.js**
 
@@ -179,7 +195,12 @@ Localhost Linux
 - ``docker-compose up -d``
 - Open Powershell and navigate to the segmensation folder
 - ``docker-compose up -d``
-- now you should see the containers running in Docker Desktop
+- show current containers with docker
+- ``docker ps``
+
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/dockerps.png
+   :alt: container running in Docker Desktop
+   :align: center
 
 
 Server Linux
@@ -192,7 +213,7 @@ Server Linux
 - make sure to have docker(v20.x.x) and docker-compose(v2.x.x) installed
 - ``docker --version`` and ``docker-compose --version``
 - clone this repository `SegInfrastructure <https://github.com/Segmensation/segmensation-infrastructure>`_
-- edit /ansible/inventory 2nd line, where ``ansible_host=<server_ip>`` to your servers ip
+- edit in /ansible/inventory 2nd line: ``ansible_host=<server_ip>`` to your servers ip
 - go into /ansible/ and run
 - ``ansible-playbook -i inventory -l "prod_server" playbook.yml -u <user> --ask-pass --ask-become-pass --ask-vault-pass``
    - ``user`` user to who you connected over ssh
