@@ -1,17 +1,22 @@
 Uploading an Image
 ==================
 
-Segmensation can handle standard Images (.jpg, .png) as well as large, multidimensional Images (.czi, .tif).
+Segmensation can handle standard Images (.jpg, .png) as well as 
+large, multidimensional Images (.czi, .tif).
 
-Standard Images can simply be uploaded by clicking the corresponding Field and selecting the image from your file system.
+Standard Images can simply be uploaded by clicking the corresponding 
+field and selecting an image from the file system.
 
-For the correct upload of multidimensional images additional information is necessary:
+For the correct upload of multidimensional images additional 
+information is necessary:
 
 **Channel**
-	Pick the channel that should be uploaded. 
+	The channel that should be uploaded. 
 **Images (from/to)**
-	Select the range of single images/layers you want to upload.
+	The range of single images/layers that should be uploaded.
 **File Type**
-	Select if you want to upload a layered image (CZI Stack) or a mosaic (CZI Stitching).
+	Defines if the image should be handled as a layered image (CZI 
+	Stack) or a mosaic (CZI Stitching).
 
-When the upload is completed, the corresponding image is shown on the left and can be selected for further processing.
+When the upload is completed, the corresponding image is shown on 
+the left and can be selected for further processing.

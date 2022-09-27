@@ -50,7 +50,7 @@ This function calculates the ratio of fibers or astrocytes in an
 image by getting the amount of pixels assigned to objects in each 
 channel (AF/MBP (myelin fibers), GFAP (astrocytes)). Pixels that 
 are assigned to multiple objects are not taken into account, as 
-overlapping structures are not possible.
+overlapping structures are not possible in this context.
 
 Threshold and foreground pixels can be calculated and downloaded as 
 csv.
