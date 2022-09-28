@@ -15,7 +15,7 @@ The documentation index is contained in ``source/index.rst`` and looks as
 follows:
 
 .. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/sphinx_index.jpg
-   :alt: image of shinx project index
+   :alt: image of sphinx project index
    :align: center
 
 The corresponding pages can be found at the respective locations inside the 
@@ -32,3 +32,17 @@ Information on .rst syntax can be found `here
 The Read the Docs page is connected to GitHub through a webhook, so it will 
 be rebuilt automatically as soon as the main branch of segmensation-docs 
 receives a push.
+
+Adding images
+-------------
+Images should be included through a link to the raw file on GitHub, which 
+should look like this:
+
+.. code:: restructuredtext
+
+   .. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/sphinx_index.jpg
+   :alt: image of sphinx project index
+   :align: center
+
+Paths to local files can be used for test builds, but these images will not 
+be found when Read the Docs is built.
