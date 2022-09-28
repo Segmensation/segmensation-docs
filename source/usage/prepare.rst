@@ -26,7 +26,7 @@ Parameters
 ^^^^^^^^^^
 Number of iterations for Dilation and Erosion.
 
-.. image:: /img/prepare_closing.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/prepare_closing.jpg
    :alt: image of GUI
 
 Shrinking
@@ -41,7 +41,7 @@ space to the desired range.
     between 0 and 255, which is required for saving the image as JPG or 
     PNG.
 
-.. image:: /img/prepare_shrinking.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/prepare_shrinking.jpg
    :alt: image of GUI
 
 .. [HIPR] Hypermedia Image Processing Reference - R. Fisher, S. Perkins, 
