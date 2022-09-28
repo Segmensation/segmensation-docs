@@ -39,7 +39,7 @@ As soon as labelled trainig data exists, a Random Forest Classifier
 can be trained on this data. The classifier can then be used to 
 predict occurrences of astrocytes in unlabelled images.
 
-.. image:: /img/analyze_find_astrocytes_2.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/analyze_find_astrocytes_2.jpg
    :alt: image of GUI
 
 The channel for which objects are predicted can be manually set. 
@@ -54,7 +54,7 @@ predictions for clumps despite their rare occurrence.
 Calculating orientation
 -----------------------
 
-.. image:: /img/analyze_orientation_1.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/analyze_orientation_1.jpg
    :alt: image of GUI
 
 This function divides an image into smaller patches and 
@@ -81,7 +81,7 @@ Furtermore, histograms of the images can be generated and it is
 possible to only get the visual representation for a specific 
 tile or layer.
 
-.. image:: /img/analyze_orientation_2.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/analyze_orientation_2.jpg
    :alt: image of GUI
 
 Ratio of fibers
@@ -98,7 +98,7 @@ assignment, slices with varied sizes or a black hole - a structure
 that does not contain any fibres - the corresponding checkbox can 
 be activated to take the anomaly into account.
 
-.. image:: /img/analyze_ratio_fibers.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/analyze_ratio_fibers.jpg
    :alt: image of GUI
 
 Furthermore, the calculation can be limited to specific layers or channels.
@@ -137,7 +137,7 @@ The approaches have similar parameters: For each approach, the channel
 and slice number of the image can be specified. Approach 1 and 2 also 
 need the class number of fibres/objects that should be predicted.
 
-.. image:: /img/analyze_segmentation_fibers.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/analyze_segmentation_fibers.jpg
    :alt: image of GUI
 
 Other
@@ -146,5 +146,5 @@ Other
 This segment contains the option to create and save a greyscale 
 histogram for an image.
 
-.. image:: /img/analyze_other.jpg
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/analyze_other.jpg
    :alt: image of GUI
