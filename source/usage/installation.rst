@@ -188,8 +188,7 @@ Localhost Linux
     - ``becomepw`` is your sudo password from your linux
     - ``vaultpw`` is in the KeePass database
 - if you havent added ansible to you path use:
-- ``/home/<user>/.local/bin/ansible-playbook -i inventory -l "localhost" playbook.yml -u user --ask-pass --ask-become-pass --ask-vault-pass
-``
+- ``/home/<user>/.local/bin/ansible-playbook -i inventory -l "localhost" playbook.yml -u user --ask-pass --ask-become-pass --ask-vault-pass``
 
 .. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/ansible.png
    :alt: succesfull creating dockerfiles with ansible
