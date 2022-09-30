@@ -230,8 +230,8 @@ Server Linux
    - ``becomepw`` is your sudo password from your user
    - ``vaultpw`` is in the KeePass database
 - if you havent added ansible to you path use:
-- ``/home/<user>/.local/bin/ansible-playbook -i inventory -l "prod_server" playbook.yml -u user --ask-pass --ask-become-pass --ask-vault-pass
-``
+- ``/home/<user>/.local/bin/ansible-playbook -i inventory -l "prod_server" playbook.yml -u user --ask-pass --ask-become-pass --ask-vault-pass``
+
 Setup Frontend
 --------------
 
