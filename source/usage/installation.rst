@@ -238,3 +238,19 @@ Setup Frontend
 - set ``ELECTRON_WEBPACK_APP_API_URL="http://localhost:5000"`` in segmansation-app/.env
 - or ``ELECTRON_WEBPACK_APP_API_URL="http://<server_ip>:5000"`` if Backend is running on a server
 - follow README there to set it up
+
+- to verify everything is working correctly, firstly upload any image, then wait until its processed and finally click on the uploaded image to show it
+
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/segApp.png
+   :alt: App running succesfully 
+   :align: center
+
+
+Troubleshooting
+---------------
+
+- if you cant connect the App to the Infrastructure, make sure you did all the steps correctly and not using outdated versions
+- f.e. the "" in ``ELECTRON_WEBPACK_APP_API_URL="http://localhost:5000"`` is mandatory
+- if you run a firewall, make sure that docker haves rules for it, so that the App can connect to docker
+- ``sudo ufw allow from 172.18.0.0/16 to any port 443``
+- ``sudo ufw allow from 172.18.0.0/16 to any port 80``
