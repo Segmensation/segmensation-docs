@@ -106,9 +106,9 @@ Localhost Windows
 
 **6. Run**
 
-- Open Powershell and navigate to the segmensation folder
-- ``docker-compose up -d``
 - Open Powershell and navigate to the traefik folder
+- ``docker-compose up -d``
+- Open Powershell and navigate to the segmensation folder
 - ``docker-compose up -d``
 - now you should see the containers running in Docker Desktop
 
