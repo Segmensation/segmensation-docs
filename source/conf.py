@@ -20,8 +20,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Segmensation'
-copyright = '2022, Sarah Winkelmann'
-author = 'Sarah Winkelmann'
+copyright = '2022, Segmensation'
+author = 'Sarah Winkelmann, Artjom Kaiser'
 
 
 # -- General configuration ---------------------------------------------------
@@ -48,6 +48,8 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
+html_logo = "img/logo.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
