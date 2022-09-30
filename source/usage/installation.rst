@@ -150,7 +150,7 @@ Localhost Linux
 - add it to path or use it directly with ``/home/<user>/.local/bin/ansible``
 
 .. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/linuxansible.png
-   :alt: container running in Docker Desktop
+   :alt: checking if everything is installed correctly
    :align: center
 
 **3. Install Node.js**
@@ -187,13 +187,22 @@ Localhost Linux
     - ``sshpw`` is an ssh key of your maschine (not necessary)
     - ``becomepw`` is your sudo password from your linux
     - ``vaultpw`` is in the KeePass database
+- if you havent added ansible to you path use:
+- ``/home/<user>/.local/bin/ansible-playbook -i inventory -l "localhost" playbook.yml -u user --ask-pass --ask-become-pass --ask-vault-pass
+``
+
+.. image:: https://raw.githubusercontent.com/Segmensation/segmensation-docs/main/source/img/ansible.png
+   :alt: succesfull creating dockerfiles with ansible
+   :align: center
+
 - now you should have traefik and segmensation folders with docker-compose files in it
+
 
 **5. Run**
 
-- Open Powershell and navigate to the traefik folder
+- Open terminal and navigate to the traefik folder
 - ``docker-compose up -d``
-- Open Powershell and navigate to the segmensation folder
+- Open terminal and navigate to the segmensation folder
 - ``docker-compose up -d``
 - show current containers with docker
 - ``docker ps``
@@ -220,7 +229,9 @@ Server Linux
    - ``sshpw`` the ssh password to your user
    - ``becomepw`` is your sudo password from your user
    - ``vaultpw`` is in the KeePass database
-
+- if you havent added ansible to you path use:
+- ``/home/<user>/.local/bin/ansible-playbook -i inventory -l "prod_server" playbook.yml -u user --ask-pass --ask-become-pass --ask-vault-pass
+``
 Setup Frontend
 --------------
 
